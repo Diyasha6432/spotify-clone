@@ -105,3 +105,45 @@ nav ul li{
     opacity: 1;
     transition: opacity 1s ease-in;
 }
+*************
+// App.js
+import React from 'react';
+import './styles.css';
+
+const App = () => {
+  return (
+    <div>
+      <Header />
+      <Hero />
+    </div>
+  );
+};
+
+const Header = () => {
+  return (
+    <header>
+      <nav>
+        <div className="logo">My Product</div>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+  );
+};
+
+const Hero = () => {
+  return (
+    <main className="hero">
+      <div className="hero-content">
+        <h1>Introducing Our Amazing Product</h1>
+        <p>A simple, elegant solution for all your needs. Get ready to simplify your life.</p>
+        <a href="#buy-now" className="cta-button">Buy Now</a>
+      </div>
+    </main>
+  );
+};
+
+export default App;
